@@ -1,0 +1,834 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: ./cov_report_html</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_4_t1.html" class="namet">rate_limiter_16to4</A>.grant_arbiter_inst<BR>
+
+<B>Type name: </B>grant_arbiter<BR>
+
+<B>File name: </B><A HREF="/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv" TARGET="_blank">/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range80to84"><A HREF="">82.59%</A></TD>
+<TD class="range70to74"><A HREF="">71.85%&nbsp;(291/405)</A></TD>
+<TD class="range100"><A HREF="#_Blockcov">100.00%&nbsp;(17/17)</A></TD>
+<TD class="range60to64"><A HREF="#_Expressioncov">63.67%&nbsp;(163/256)</A></TD>
+<TD class="range80to84"><A HREF="#_Togglecov">84.09%&nbsp;(111/132)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">grant_arbiter_inst</TD>
+
+</TR>
+
+
+</TABLE>
+<BR><BR><A NAME="_Blockcov"></A>
+<P class="detail_title">     Uncovered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>rate_limiter_16to4.grant_arbiter_inst<BR>
+<B>Type name: </B>grant_arbiter<BR>
+<B>File name: </B><A HREF="/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv" TARGET="_blank">/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv</A><BR><B>Number of uncovered blocks: </B>0 of 17<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Uncovered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>rate_limiter_16to4.grant_arbiter_inst<BR>
+<B>Type name: </B>grant_arbiter<BR>
+<B>File name: </B><A HREF="/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv" TARGET="_blank">/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv</A><BR><B>Number of uncovered expressions: </B>93 of 256<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+1.1    | 50.00% (3/6)  | 73     | ((((next_state_stream_0 == 5'd1) && token_count_en_stream_0) || ((next_state_stream_1 == 5'd1) && token_count_en_stream_0)) || ((next_state_stream_2 == 5'd1) && token_count_en_stream_0)) || ((next_state_stream_3 == 5'd1) && token_count_en_stream_0) 
+1.4    | 50.00% (1/2)  | 73     | (next_state_stream_2 == 5'd1)                      
+1.5    | 50.00% (1/2)  | 74     | (next_state_stream_3 == 5'd1)                      
+2.1    | 33.33% (2/6)  | 80     | ((((next_state_stream_0 == 5'd2) && token_count_en_stream_1) || ((next_state_stream_1 == 5'd2) && token_count_en_stream_1)) || ((next_state_stream_2 == 5'd2) && token_count_en_stream_1)) || ((next_state_stream_3 == 5'd2) && token_count_en_stream_1) 
+2.2    | 50.00% (1/2)  | 78     | (next_state_stream_0 == 5'd2)                      
+2.4    | 50.00% (1/2)  | 80     | (next_state_stream_2 == 5'd2)                      
+3.1    | 50.00% (3/6)  | 87     | ((((next_state_stream_0 == 5'd3) && token_count_en_stream_2) || ((next_state_stream_1 == 5'd3) && token_count_en_stream_2)) || ((next_state_stream_2 == 5'd3) && token_count_en_stream_2)) || ((next_state_stream_3 == 5'd3) && token_count_en_stream_2) 
+3.3    | 50.00% (1/2)  | 86     | (next_state_stream_1 == 5'd3)                      
+3.4    | 50.00% (1/2)  | 87     | (next_state_stream_2 == 5'd3)                      
+3.5    | 50.00% (1/2)  | 88     | (next_state_stream_3 == 5'd3)                      
+4.1    | 50.00% (3/6)  | 94     | ((((next_state_stream_0 == 5'd4) && token_count_en_stream_3) || ((next_state_stream_1 == 5'd4) && token_count_en_stream_3)) || ((next_state_stream_2 == 5'd4) && token_count_en_stream_3)) || ((next_state_stream_3 == 5'd4) && token_count_en_stream_3) 
+4.3    | 50.00% (1/2)  | 93     | (next_state_stream_1 == 5'd4)                      
+4.4    | 50.00% (1/2)  | 94     | (next_state_stream_2 == 5'd4)                      
+4.5    | 50.00% (1/2)  | 95     | (next_state_stream_3 == 5'd4)                      
+5.1    | 66.67% (4/6)  | 101    | ((((next_state_stream_0 == 5'd5) && token_count_en_stream_4) || ((next_state_stream_1 == 5'd5) && token_count_en_stream_4)) || ((next_state_stream_2 == 5'd5) && token_count_en_stream_4)) || ((next_state_stream_3 == 5'd5) && token_count_en_stream_4) 
+5.2    | 50.00% (1/2)  | 99     | (next_state_stream_0 == 5'd5)                      
+5.5    | 50.00% (1/2)  | 102    | (next_state_stream_3 == 5'd5)                      
+6.1    | 33.33% (2/6)  | 108    | ((((next_state_stream_0 == 5'd6) && token_count_en_stream_5) || ((next_state_stream_1 == 5'd6) && token_count_en_stream_5)) || ((next_state_stream_2 == 5'd6) && token_count_en_stream_5)) || ((next_state_stream_3 == 5'd6) && token_count_en_stream_5) 
+6.2    | 50.00% (1/2)  | 106    | (next_state_stream_0 == 5'd6)                      
+6.3    | 50.00% (1/2)  | 107    | (next_state_stream_1 == 5'd6)                      
+6.4    | 50.00% (1/2)  | 108    | (next_state_stream_2 == 5'd6)                      
+6.5    | 50.00% (1/2)  | 109    | (next_state_stream_3 == 5'd6)                      
+7.1    | 50.00% (3/6)  | 115    | ((((next_state_stream_0 == 5'd7) && token_count_en_stream_6) || ((next_state_stream_1 == 5'd7) && token_count_en_stream_6)) || ((next_state_stream_2 == 5'd7) && token_count_en_stream_6)) || ((next_state_stream_3 == 5'd7) && token_count_en_stream_6) 
+7.2    | 50.00% (1/2)  | 113    | (next_state_stream_0 == 5'd7)                      
+7.4    | 50.00% (1/2)  | 115    | (next_state_stream_2 == 5'd7)                      
+7.5    | 50.00% (1/2)  | 116    | (next_state_stream_3 == 5'd7)                      
+8.1    | 50.00% (3/6)  | 122    | ((((next_state_stream_0 == 5'd8) && token_count_en_stream_7) || ((next_state_stream_1 == 5'd8) && token_count_en_stream_7)) || ((next_state_stream_2 == 5'd8) && token_count_en_stream_7)) || ((next_state_stream_3 == 5'd8) && token_count_en_stream_7) 
+8.2    | 50.00% (1/2)  | 120    | (next_state_stream_0 == 5'd8)                      
+8.4    | 50.00% (1/2)  | 122    | (next_state_stream_2 == 5'd8)                      
+8.5    | 50.00% (1/2)  | 123    | (next_state_stream_3 == 5'd8)                      
+9.1    | 66.67% (4/6)  | 129    | ((((next_state_stream_0 == 5'd9) && token_count_en_stream_8) || ((next_state_stream_1 == 5'd9) && token_count_en_stream_8)) || ((next_state_stream_2 == 5'd9) && token_count_en_stream_8)) || ((next_state_stream_3 == 5'd9) && token_count_en_stream_8) 
+9.2    | 50.00% (1/2)  | 127    | (next_state_stream_0 == 5'd9)                      
+9.5    | 50.00% (1/2)  | 130    | (next_state_stream_3 == 5'd9)                      
+10.1   | 50.00% (3/6)  | 136    | ((((next_state_stream_0 == 5'd10) && token_count_en_stream_9) || ((next_state_stream_1 == 5'd10) && token_count_en_stream_9)) || ((next_state_stream_2 == 5'd10) && token_count_en_stream_9)) || ((next_state_stream_3 == 5'd10) && token_count_en_stream_9) 
+10.2   | 50.00% (1/2)  | 134    | (next_state_stream_0 == 5'd10)                     
+10.3   | 50.00% (1/2)  | 135    | (next_state_stream_1 == 5'd10)                     
+10.5   | 50.00% (1/2)  | 137    | (next_state_stream_3 == 5'd10)                     
+11.1   | 50.00% (3/6)  | 143    | ((((next_state_stream_0 == 5'd11) && token_count_en_stream_10) || ((next_state_stream_1 == 5'd11) && token_count_en_stream_10)) || ((next_state_stream_2 == 5'd11) && token_count_en_stream_10)) || ((next_state_stream_3 == 5'd11) && token_count_en_stream_10) 
+11.2   | 50.00% (1/2)  | 141    | (next_state_stream_0 == 5'd11)                     
+11.3   | 50.00% (1/2)  | 142    | (next_state_stream_1 == 5'd11)                     
+11.5   | 50.00% (1/2)  | 144    | (next_state_stream_3 == 5'd11)                     
+12.1   | 50.00% (3/6)  | 150    | ((((next_state_stream_0 == 5'd12) && token_count_en_stream_11) || ((next_state_stream_1 == 5'd12) && token_count_en_stream_11)) || ((next_state_stream_2 == 5'd12) && token_count_en_stream_11)) || ((next_state_stream_3 == 5'd12) && token_count_en_stream_11) 
+12.2   | 50.00% (1/2)  | 148    | (next_state_stream_0 == 5'd12)                     
+12.5   | 50.00% (1/2)  | 151    | (next_state_stream_3 == 5'd12)                     
+13.1   | 50.00% (3/6)  | 157    | ((((next_state_stream_0 == 5'd13) && token_count_en_stream_12) || ((next_state_stream_1 == 5'd13) && token_count_en_stream_12)) || ((next_state_stream_2 == 5'd13) && token_count_en_stream_12)) || ((next_state_stream_3 == 5'd13) && token_count_en_stream_12) 
+13.2   | 50.00% (1/2)  | 155    | (next_state_stream_0 == 5'd13)                     
+13.4   | 50.00% (1/2)  | 157    | (next_state_stream_2 == 5'd13)                     
+14.1   | 50.00% (3/6)  | 164    | ((((next_state_stream_0 == 5'd14) && token_count_en_stream_13) || ((next_state_stream_1 == 5'd14) && token_count_en_stream_13)) || ((next_state_stream_2 == 5'd14) && token_count_en_stream_13)) || ((next_state_stream_3 == 5'd14) && token_count_en_stream_13) 
+14.2   | 50.00% (1/2)  | 162    | (next_state_stream_0 == 5'd14)                     
+14.3   | 50.00% (1/2)  | 163    | (next_state_stream_1 == 5'd14)                     
+14.4   | 50.00% (1/2)  | 164    | (next_state_stream_2 == 5'd14)                     
+15.1   | 50.00% (3/6)  | 171    | ((((next_state_stream_0 == 5'd15) && token_count_en_stream_14) || ((next_state_stream_1 == 5'd15) && token_count_en_stream_14)) || ((next_state_stream_2 == 5'd15) && token_count_en_stream_14)) || ((next_state_stream_3 == 5'd15) && token_count_en_stream_14) 
+15.2   | 50.00% (1/2)  | 169    | (next_state_stream_0 == 5'd15)                     
+15.3   | 50.00% (1/2)  | 170    | (next_state_stream_1 == 5'd15)                     
+15.4   | 50.00% (1/2)  | 171    | (next_state_stream_2 == 5'd15)                     
+16.1   | 50.00% (3/6)  | 178    | ((((next_state_stream_0 == 5'd16) && token_count_en_stream_15) || ((next_state_stream_1 == 5'd16) && token_count_en_stream_15)) || ((next_state_stream_2 == 5'd16) && token_count_en_stream_15)) || ((next_state_stream_3 == 5'd16) && token_count_en_stream_15) 
+16.2   | 50.00% (1/2)  | 176    | (next_state_stream_0 == 5'd16)                     
+16.3   | 50.00% (1/2)  | 177    | (next_state_stream_1 == 5'd16)                     
+16.4   | 50.00% (1/2)  | 178    | (next_state_stream_2 == 5'd16)                     
+18.1   | 50.00% (1/2)  | 187    | pck_rd_en_grnt_1_enable ? 1'b1 : 1'b0              
+22.1   | 50.00% (1/2)  | 191    | pck_rd_en_grnt_5_enable ? 1'b1 : 1'b0              
+
+<B>index: </B><B>1.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>73</B><B> source: </B><B>(next_state_stream_2 == 5'd1) && (token_count_en_stream_0)    ||</B>
+
+((((next_state_stream_0 == 5'd1) && token_count_en_stream_0) || ((next_state_stream_1 == 5'd1) && token_count_en_stream_0)) || ((next_state_stream_2 == 5'd1) && token_count_en_stream_0)) || ((next_state_stream_3 == 5'd1) && token_count_en_stream_0)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+1.1.1     | 0     | 1    | -   1   -   -   1   
+1.1.2     | 0     | 1    | -   1   -   1   -   
+1.1.3     | 0     | 1    | -   1   1   -   -   
+
+<B>index: </B><B>1.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>73</B><B> source: </B><B>(next_state_stream_2 == 5'd1) && (token_count_en_stream_0)    ||</B>
+
+(next_state_stream_2 == 5'd1)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><11></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+1.4.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>1.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>74</B><B> source: </B><B>(next_state_stream_3 == 5'd1) && (token_count_en_stream_0)</B>
+
+(next_state_stream_3 == 5'd1)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><13></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+1.5.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>2.1</B><B> grade: </B><B>33.33% (2/6)</B><B> line: </B><B>80</B><B> source: </B><B>(next_state_stream_2 == 5'd2) && (token_count_en_stream_1)    ||</B>
+
+((((next_state_stream_0 == 5'd2) && token_count_en_stream_1) || ((next_state_stream_1 == 5'd2) && token_count_en_stream_1)) || ((next_state_stream_2 == 5'd2) && token_count_en_stream_1)) || ((next_state_stream_3 == 5'd2) && token_count_en_stream_1)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+2.1.1     | 0     | 1    | -   1   -   -   1   
+2.1.2     | 0     | 1    | -   1   -   1   -   
+2.1.3     | 0     | 1    | -   1   1   -   -   
+2.1.4     | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>2.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>78</B><B> source: </B><B>(next_state_stream_0 == 5'd2) && (token_count_en_stream_1)    ||</B>
+
+(next_state_stream_0 == 5'd2)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B><B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+2.2.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>2.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>80</B><B> source: </B><B>(next_state_stream_2 == 5'd2) && (token_count_en_stream_1)    ||</B>
+
+(next_state_stream_2 == 5'd2)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><11></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+2.4.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>3.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>87</B><B> source: </B><B>(next_state_stream_2 == 5'd3) && (token_count_en_stream_2)    ||</B>
+
+((((next_state_stream_0 == 5'd3) && token_count_en_stream_2) || ((next_state_stream_1 == 5'd3) && token_count_en_stream_2)) || ((next_state_stream_2 == 5'd3) && token_count_en_stream_2)) || ((next_state_stream_3 == 5'd3) && token_count_en_stream_2)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+3.1.1     | 0     | 1    | -   1   -   -   1   
+3.1.2     | 0     | 1    | -   1   -   1   -   
+3.1.3     | 0     | 1    | -   1   1   -   -   
+
+<B>index: </B><B>3.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>86</B><B> source: </B><B>(next_state_stream_1 == 5'd3) && (token_count_en_stream_2)    ||</B>
+
+(next_state_stream_1 == 5'd3)<BR>
+ <B><</B>--------<B>8</B>--------<B>></B>    <B><</B><B>9</B>-<B>></B>
+
+index     | hit   | &lt;8&gt; &lt;9&gt; 
+-------------------------------- '=='
+3.3.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>3.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>87</B><B> source: </B><B>(next_state_stream_2 == 5'd3) && (token_count_en_stream_2)    ||</B>
+
+(next_state_stream_2 == 5'd3)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><11></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+3.4.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>3.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>88</B><B> source: </B><B>(next_state_stream_3 == 5'd3) && (token_count_en_stream_2)</B>
+
+(next_state_stream_3 == 5'd3)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><13></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+3.5.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>4.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>94</B><B> source: </B><B>(next_state_stream_2 == 5'd4) && (token_count_en_stream_3)    ||</B>
+
+((((next_state_stream_0 == 5'd4) && token_count_en_stream_3) || ((next_state_stream_1 == 5'd4) && token_count_en_stream_3)) || ((next_state_stream_2 == 5'd4) && token_count_en_stream_3)) || ((next_state_stream_3 == 5'd4) && token_count_en_stream_3)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+4.1.1     | 0     | 1    | -   1   -   -   1   
+4.1.2     | 0     | 1    | -   1   -   1   -   
+4.1.3     | 0     | 1    | -   1   1   -   -   
+
+<B>index: </B><B>4.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>93</B><B> source: </B><B>(next_state_stream_1 == 5'd4) && (token_count_en_stream_3)    ||</B>
+
+(next_state_stream_1 == 5'd4)<BR>
+ <B><</B>--------<B>8</B>--------<B>></B>    <B><</B><B>9</B>-<B>></B>
+
+index     | hit   | &lt;8&gt; &lt;9&gt; 
+-------------------------------- '=='
+4.3.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>4.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>94</B><B> source: </B><B>(next_state_stream_2 == 5'd4) && (token_count_en_stream_3)    ||</B>
+
+(next_state_stream_2 == 5'd4)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><11></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+4.4.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>4.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>95</B><B> source: </B><B>(next_state_stream_3 == 5'd4) && (token_count_en_stream_3)</B>
+
+(next_state_stream_3 == 5'd4)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><13></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+4.5.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>5.1</B><B> grade: </B><B>66.67% (4/6)</B><B> line: </B><B>101</B><B> source: </B><B>(next_state_stream_2 == 5'd5) && (token_count_en_stream_4)    ||</B>
+
+((((next_state_stream_0 == 5'd5) && token_count_en_stream_4) || ((next_state_stream_1 == 5'd5) && token_count_en_stream_4)) || ((next_state_stream_2 == 5'd5) && token_count_en_stream_4)) || ((next_state_stream_3 == 5'd5) && token_count_en_stream_4)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+5.1.1     | 0     | 1    | -   1   -   -   1   
+5.1.4     | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>5.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>99</B><B> source: </B><B>(next_state_stream_0 == 5'd5) && (token_count_en_stream_4)    ||</B>
+
+(next_state_stream_0 == 5'd5)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B><B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+5.2.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>5.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>102</B><B> source: </B><B>(next_state_stream_3 == 5'd5) && (token_count_en_stream_4)</B>
+
+(next_state_stream_3 == 5'd5)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><13></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+5.5.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>6.1</B><B> grade: </B><B>33.33% (2/6)</B><B> line: </B><B>108</B><B> source: </B><B>(next_state_stream_2 == 5'd6) && (token_count_en_stream_5)    ||</B>
+
+((((next_state_stream_0 == 5'd6) && token_count_en_stream_5) || ((next_state_stream_1 == 5'd6) && token_count_en_stream_5)) || ((next_state_stream_2 == 5'd6) && token_count_en_stream_5)) || ((next_state_stream_3 == 5'd6) && token_count_en_stream_5)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+6.1.1     | 0     | 1    | -   1   -   -   1   
+6.1.2     | 0     | 1    | -   1   -   1   -   
+6.1.3     | 0     | 1    | -   1   1   -   -   
+6.1.4     | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>6.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>106</B><B> source: </B><B>(next_state_stream_0 == 5'd6) && (token_count_en_stream_5)    ||</B>
+
+(next_state_stream_0 == 5'd6)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B><B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+6.2.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>6.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>107</B><B> source: </B><B>(next_state_stream_1 == 5'd6) && (token_count_en_stream_5)    ||</B>
+
+(next_state_stream_1 == 5'd6)<BR>
+ <B><</B>--------<B>8</B>--------<B>></B>    <B><</B><B>9</B>-<B>></B>
+
+index     | hit   | &lt;8&gt; &lt;9&gt; 
+-------------------------------- '=='
+6.3.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>6.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>108</B><B> source: </B><B>(next_state_stream_2 == 5'd6) && (token_count_en_stream_5)    ||</B>
+
+(next_state_stream_2 == 5'd6)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><11></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+6.4.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>6.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>109</B><B> source: </B><B>(next_state_stream_3 == 5'd6) && (token_count_en_stream_5)</B>
+
+(next_state_stream_3 == 5'd6)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><13></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+6.5.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>7.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>115</B><B> source: </B><B>(next_state_stream_2 == 5'd7) && (token_count_en_stream_6)    ||</B>
+
+((((next_state_stream_0 == 5'd7) && token_count_en_stream_6) || ((next_state_stream_1 == 5'd7) && token_count_en_stream_6)) || ((next_state_stream_2 == 5'd7) && token_count_en_stream_6)) || ((next_state_stream_3 == 5'd7) && token_count_en_stream_6)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+7.1.1     | 0     | 1    | -   1   -   -   1   
+7.1.2     | 0     | 1    | -   1   -   1   -   
+7.1.4     | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>7.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>113</B><B> source: </B><B>(next_state_stream_0 == 5'd7) && (token_count_en_stream_6)    ||</B>
+
+(next_state_stream_0 == 5'd7)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B><B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+7.2.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>7.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>115</B><B> source: </B><B>(next_state_stream_2 == 5'd7) && (token_count_en_stream_6)    ||</B>
+
+(next_state_stream_2 == 5'd7)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><11></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+7.4.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>7.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>116</B><B> source: </B><B>(next_state_stream_3 == 5'd7) && (token_count_en_stream_6)</B>
+
+(next_state_stream_3 == 5'd7)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><13></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+7.5.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>8.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>122</B><B> source: </B><B>(next_state_stream_2 == 5'd8) && (token_count_en_stream_7)    ||</B>
+
+((((next_state_stream_0 == 5'd8) && token_count_en_stream_7) || ((next_state_stream_1 == 5'd8) && token_count_en_stream_7)) || ((next_state_stream_2 == 5'd8) && token_count_en_stream_7)) || ((next_state_stream_3 == 5'd8) && token_count_en_stream_7)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+8.1.1     | 0     | 1    | -   1   -   -   1   
+8.1.2     | 0     | 1    | -   1   -   1   -   
+8.1.4     | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>8.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>120</B><B> source: </B><B>(next_state_stream_0 == 5'd8) && (token_count_en_stream_7)    ||</B>
+
+(next_state_stream_0 == 5'd8)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B><B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+8.2.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>8.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>122</B><B> source: </B><B>(next_state_stream_2 == 5'd8) && (token_count_en_stream_7)    ||</B>
+
+(next_state_stream_2 == 5'd8)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><11></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+8.4.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>8.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>123</B><B> source: </B><B>(next_state_stream_3 == 5'd8) && (token_count_en_stream_7)</B>
+
+(next_state_stream_3 == 5'd8)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><13></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+8.5.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>9.1</B><B> grade: </B><B>66.67% (4/6)</B><B> line: </B><B>129</B><B> source: </B><B>(next_state_stream_2 == 5'd9) && (token_count_en_stream_8)    ||</B>
+
+((((next_state_stream_0 == 5'd9) && token_count_en_stream_8) || ((next_state_stream_1 == 5'd9) && token_count_en_stream_8)) || ((next_state_stream_2 == 5'd9) && token_count_en_stream_8)) || ((next_state_stream_3 == 5'd9) && token_count_en_stream_8)<BR>
+   <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>-------------<B>></B>                                  <B><</B>-------------<B>4</B>-------------<B>></B>                                  <B><</B>-------------<B>5</B>-------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+9.1.1     | 0     | 1    | -   1   -   -   1   
+9.1.4     | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>9.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>127</B><B> source: </B><B>(next_state_stream_0 == 5'd9) && (token_count_en_stream_8)    ||</B>
+
+(next_state_stream_0 == 5'd9)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B><B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+9.2.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>9.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>130</B><B> source: </B><B>(next_state_stream_3 == 5'd9) && (token_count_en_stream_8)</B>
+
+(next_state_stream_3 == 5'd9)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><13></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+9.5.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>10.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>136</B><B> source: </B><B>(next_state_stream_2 == 5'd10) && (token_count_en_stream_9)   ||</B>
+
+((((next_state_stream_0 == 5'd10) && token_count_en_stream_9) || ((next_state_stream_1 == 5'd10) && token_count_en_stream_9)) || ((next_state_stream_2 == 5'd10) && token_count_en_stream_9)) || ((next_state_stream_3 == 5'd10) && token_count_en_stream_9)<BR>
+   <B><</B>-------------<B>1</B>--------------<B>></B>    <B><</B>----------<B>2</B>----------<B>></B>      <B><</B>-------------<B>3</B>--------------<B>></B>                                  <B><</B>-------------<B>4</B>--------------<B>></B>                                  <B><</B>-------------<B>5</B>--------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+10.1.1    | 0     | 1    | -   1   -   -   1   
+10.1.3    | 0     | 1    | -   1   1   -   -   
+10.1.4    | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>10.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>134</B><B> source: </B><B>(next_state_stream_0 == 5'd10) && (token_count_en_stream_9)   ||</B>
+
+(next_state_stream_0 == 5'd10)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B>-<B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+10.2.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>10.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>135</B><B> source: </B><B>(next_state_stream_1 == 5'd10) && (token_count_en_stream_9)   ||</B>
+
+(next_state_stream_1 == 5'd10)<BR>
+ <B><</B>--------<B>8</B>--------<B>></B>    <B><</B>-<B>9</B>-<B>></B>
+
+index     | hit   | &lt;8&gt; &lt;9&gt; 
+-------------------------------- '=='
+10.3.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>10.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>137</B><B> source: </B><B>(next_state_stream_3 == 5'd10) && (token_count_en_stream_9)</B>
+
+(next_state_stream_3 == 5'd10)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><</B><B>13</B>-<B>></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+10.5.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>11.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>143</B><B> source: </B><B>(next_state_stream_2 == 5'd11) && (token_count_en_stream_10)   ||</B>
+
+((((next_state_stream_0 == 5'd11) && token_count_en_stream_10) || ((next_state_stream_1 == 5'd11) && token_count_en_stream_10)) || ((next_state_stream_2 == 5'd11) && token_count_en_stream_10)) || ((next_state_stream_3 == 5'd11) && token_count_en_stream_10)<BR>
+   <B><</B>-------------<B>1</B>--------------<B>></B>    <B><</B>----------<B>2</B>-----------<B>></B>      <B><</B>-------------<B>3</B>--------------<B>></B>                                   <B><</B>-------------<B>4</B>--------------<B>></B>                                   <B><</B>-------------<B>5</B>--------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+11.1.1    | 0     | 1    | -   1   -   -   1   
+11.1.3    | 0     | 1    | -   1   1   -   -   
+11.1.4    | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>11.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>141</B><B> source: </B><B>(next_state_stream_0 == 5'd11) && (token_count_en_stream_10)   ||</B>
+
+(next_state_stream_0 == 5'd11)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B>-<B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+11.2.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>11.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>142</B><B> source: </B><B>(next_state_stream_1 == 5'd11) && (token_count_en_stream_10)   ||</B>
+
+(next_state_stream_1 == 5'd11)<BR>
+ <B><</B>--------<B>8</B>--------<B>></B>    <B><</B>-<B>9</B>-<B>></B>
+
+index     | hit   | &lt;8&gt; &lt;9&gt; 
+-------------------------------- '=='
+11.3.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>11.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>144</B><B> source: </B><B>(next_state_stream_3 == 5'd11) && (token_count_en_stream_10)</B>
+
+(next_state_stream_3 == 5'd11)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><</B><B>13</B>-<B>></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+11.5.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>12.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>150</B><B> source: </B><B>(next_state_stream_2 == 5'd12) && (token_count_en_stream_11)   ||</B>
+
+((((next_state_stream_0 == 5'd12) && token_count_en_stream_11) || ((next_state_stream_1 == 5'd12) && token_count_en_stream_11)) || ((next_state_stream_2 == 5'd12) && token_count_en_stream_11)) || ((next_state_stream_3 == 5'd12) && token_count_en_stream_11)<BR>
+   <B><</B>-------------<B>1</B>--------------<B>></B>    <B><</B>----------<B>2</B>-----------<B>></B>      <B><</B>-------------<B>3</B>--------------<B>></B>                                   <B><</B>-------------<B>4</B>--------------<B>></B>                                   <B><</B>-------------<B>5</B>--------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+12.1.1    | 0     | 1    | -   1   -   -   1   
+12.1.3    | 0     | 1    | -   1   1   -   -   
+12.1.4    | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>12.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>148</B><B> source: </B><B>(next_state_stream_0 == 5'd12) && (token_count_en_stream_11)   ||</B>
+
+(next_state_stream_0 == 5'd12)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B>-<B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+12.2.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>12.5</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>151</B><B> source: </B><B>(next_state_stream_3 == 5'd12) && (token_count_en_stream_11)</B>
+
+(next_state_stream_3 == 5'd12)<BR>
+ <B><</B>-------<B>12</B>--------<B>></B>    <B><</B><B>13</B>-<B>></B>
+
+index     | hit   | &lt;12&gt; &lt;13&gt; 
+-------------------------------- '=='
+12.5.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>13.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>157</B><B> source: </B><B>(next_state_stream_2 == 5'd13) && (token_count_en_stream_12)   ||</B>
+
+((((next_state_stream_0 == 5'd13) && token_count_en_stream_12) || ((next_state_stream_1 == 5'd13) && token_count_en_stream_12)) || ((next_state_stream_2 == 5'd13) && token_count_en_stream_12)) || ((next_state_stream_3 == 5'd13) && token_count_en_stream_12)<BR>
+   <B><</B>-------------<B>1</B>--------------<B>></B>    <B><</B>----------<B>2</B>-----------<B>></B>      <B><</B>-------------<B>3</B>--------------<B>></B>                                   <B><</B>-------------<B>4</B>--------------<B>></B>                                   <B><</B>-------------<B>5</B>--------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+13.1.2    | 0     | 1    | -   1   -   1   -   
+13.1.3    | 0     | 1    | -   1   1   -   -   
+13.1.4    | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>13.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>155</B><B> source: </B><B>(next_state_stream_0 == 5'd13) && (token_count_en_stream_12)   ||</B>
+
+(next_state_stream_0 == 5'd13)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B>-<B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+13.2.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>13.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>157</B><B> source: </B><B>(next_state_stream_2 == 5'd13) && (token_count_en_stream_12)   ||</B>
+
+(next_state_stream_2 == 5'd13)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><</B><B>11</B>-<B>></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+13.4.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>14.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>164</B><B> source: </B><B>(next_state_stream_2 == 5'd14) && (token_count_en_stream_13)   ||</B>
+
+((((next_state_stream_0 == 5'd14) && token_count_en_stream_13) || ((next_state_stream_1 == 5'd14) && token_count_en_stream_13)) || ((next_state_stream_2 == 5'd14) && token_count_en_stream_13)) || ((next_state_stream_3 == 5'd14) && token_count_en_stream_13)<BR>
+   <B><</B>-------------<B>1</B>--------------<B>></B>    <B><</B>----------<B>2</B>-----------<B>></B>      <B><</B>-------------<B>3</B>--------------<B>></B>                                   <B><</B>-------------<B>4</B>--------------<B>></B>                                   <B><</B>-------------<B>5</B>--------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+14.1.2    | 0     | 1    | -   1   -   1   -   
+14.1.3    | 0     | 1    | -   1   1   -   -   
+14.1.4    | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>14.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>162</B><B> source: </B><B>(next_state_stream_0 == 5'd14) && (token_count_en_stream_13)   ||</B>
+
+(next_state_stream_0 == 5'd14)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B>-<B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+14.2.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>14.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>163</B><B> source: </B><B>(next_state_stream_1 == 5'd14) && (token_count_en_stream_13)   ||</B>
+
+(next_state_stream_1 == 5'd14)<BR>
+ <B><</B>--------<B>8</B>--------<B>></B>    <B><</B>-<B>9</B>-<B>></B>
+
+index     | hit   | &lt;8&gt; &lt;9&gt; 
+-------------------------------- '=='
+14.3.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>14.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>164</B><B> source: </B><B>(next_state_stream_2 == 5'd14) && (token_count_en_stream_13)   ||</B>
+
+(next_state_stream_2 == 5'd14)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><</B><B>11</B>-<B>></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+14.4.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>15.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>171</B><B> source: </B><B>(next_state_stream_2 == 5'd15) && (token_count_en_stream_14)   ||</B>
+
+((((next_state_stream_0 == 5'd15) && token_count_en_stream_14) || ((next_state_stream_1 == 5'd15) && token_count_en_stream_14)) || ((next_state_stream_2 == 5'd15) && token_count_en_stream_14)) || ((next_state_stream_3 == 5'd15) && token_count_en_stream_14)<BR>
+   <B><</B>-------------<B>1</B>--------------<B>></B>    <B><</B>----------<B>2</B>-----------<B>></B>      <B><</B>-------------<B>3</B>--------------<B>></B>                                   <B><</B>-------------<B>4</B>--------------<B>></B>                                   <B><</B>-------------<B>5</B>--------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+15.1.2    | 0     | 1    | -   1   -   1   -   
+15.1.3    | 0     | 1    | -   1   1   -   -   
+15.1.4    | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>15.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>169</B><B> source: </B><B>(next_state_stream_0 == 5'd15) && (token_count_en_stream_14)   ||</B>
+
+(next_state_stream_0 == 5'd15)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B>-<B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+15.2.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>15.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>170</B><B> source: </B><B>(next_state_stream_1 == 5'd15) && (token_count_en_stream_14)   ||</B>
+
+(next_state_stream_1 == 5'd15)<BR>
+ <B><</B>--------<B>8</B>--------<B>></B>    <B><</B>-<B>9</B>-<B>></B>
+
+index     | hit   | &lt;8&gt; &lt;9&gt; 
+-------------------------------- '=='
+15.3.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>15.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>171</B><B> source: </B><B>(next_state_stream_2 == 5'd15) && (token_count_en_stream_14)   ||</B>
+
+(next_state_stream_2 == 5'd15)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><</B><B>11</B>-<B>></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+15.4.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>16.1</B><B> grade: </B><B>50.00% (3/6)</B><B> line: </B><B>178</B><B> source: </B><B>(next_state_stream_2 == 5'd16) && (token_count_en_stream_15)   ||</B>
+
+((((next_state_stream_0 == 5'd16) && token_count_en_stream_15) || ((next_state_stream_1 == 5'd16) && token_count_en_stream_15)) || ((next_state_stream_2 == 5'd16) && token_count_en_stream_15)) || ((next_state_stream_3 == 5'd16) && token_count_en_stream_15)<BR>
+   <B><</B>-------------<B>1</B>--------------<B>></B>    <B><</B>----------<B>2</B>-----------<B>></B>      <B><</B>-------------<B>3</B>--------------<B>></B>                                   <B><</B>-------------<B>4</B>--------------<B>></B>                                   <B><</B>-------------<B>5</B>--------------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; &lt;5&gt; 
+-----------------------------------------------
+16.1.2    | 0     | 1    | -   1   -   1   -   
+16.1.3    | 0     | 1    | -   1   1   -   -   
+16.1.4    | 0     | 1    | 1   1   -   -   -   
+
+<B>index: </B><B>16.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>176</B><B> source: </B><B>(next_state_stream_0 == 5'd16) && (token_count_en_stream_15)   ||</B>
+
+(next_state_stream_0 == 5'd16)<BR>
+ <B><</B>--------<B>6</B>--------<B>></B>    <B><</B>-<B>7</B>-<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+16.2.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>16.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>177</B><B> source: </B><B>(next_state_stream_1 == 5'd16) && (token_count_en_stream_15)   ||</B>
+
+(next_state_stream_1 == 5'd16)<BR>
+ <B><</B>--------<B>8</B>--------<B>></B>    <B><</B>-<B>9</B>-<B>></B>
+
+index     | hit   | &lt;8&gt; &lt;9&gt; 
+-------------------------------- '=='
+16.3.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>16.4</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>178</B><B> source: </B><B>(next_state_stream_2 == 5'd16) && (token_count_en_stream_15)   ||</B>
+
+(next_state_stream_2 == 5'd16)<BR>
+ <B><</B>-------<B>10</B>--------<B>></B>    <B><</B><B>11</B>-<B>></B>
+
+index     | hit   | &lt;10&gt; &lt;11&gt; 
+-------------------------------- '=='
+16.4.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>18.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>187</B><B> source: </B><B>pck_rd_en_grnt_1  = (pck_rd_en_grnt_1_enable ) ? 1'b1 : 1'b0        ;</B>
+
+pck_rd_en_grnt_1_enable ? 1'b1 : 1'b0<BR>
+<B><</B>----------<B>1</B>----------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; 
+-------------------------------
+18.1.1    | 0     | 1    | 1   
+
+<B>index: </B><B>22.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>191</B><B> source: </B><B>pck_rd_en_grnt_5  = (pck_rd_en_grnt_5_enable ) ? 1'b1 : 1'b0        ;</B>
+
+pck_rd_en_grnt_5_enable ? 1'b1 : 1'b0<BR>
+<B><</B>----------<B>1</B>----------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; 
+-------------------------------
+22.1.1    | 0     | 1    | 1   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Uncovered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>rate_limiter_16to4.grant_arbiter_inst<BR>
+<B>Type name: </B>grant_arbiter<BR>
+<B>File name: </B><A HREF="/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv" TARGET="_blank">/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv</A><BR><B>Number of uncovered signal bits: </B>21 of 132<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>11 of 132<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 132<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          0          0          next_state_stream_0[4]    
+0          0          0          next_state_stream_0[3]    
+0          1          0          next_state_stream_0[2]    
+0          1          0          next_state_stream_0[1]    
+0          0          0          next_state_stream_1[4]    
+0          0          0          next_state_stream_2[4]    
+0          1          0          next_state_stream_2[3]    
+0          1          0          next_state_stream_2[2]    
+0          1          0          next_state_stream_2[1]    
+0          1          0          next_state_stream_2[0]    
+0          1          0          next_state_stream_3[4]    
+0          1          0          next_state_stream_3[3]    
+0          1          0          next_state_stream_3[2]    
+0          1          0          next_state_stream_3[1]    
+0          1          0          next_state_stream_3[0]    
+0          0          0          token_count_en_stream_1   
+0          0          0          token_count_en_stream_5   
+0          0          0          pck_rd_en_grnt_1          
+0          0          0          pck_rd_en_grnt_5          
+0          0          0          pck_rd_en_grnt_1_enable   
+0          0          0          pck_rd_en_grnt_5_enable   
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Uncovered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>rate_limiter_16to4.grant_arbiter_inst<BR>
+<B>Type name: </B>grant_arbiter<BR>
+<B>File name: </B><A HREF="/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv" TARGET="_blank">/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Uncovered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>rate_limiter_16to4.grant_arbiter_inst<BR>
+<B>Type name: </B>grant_arbiter<BR>
+<B>File name: </B><A HREF="/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv" TARGET="_blank">/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv</A><BR><B>Number of uncovered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>rate_limiter_16to4.grant_arbiter_inst<BR>
+<B>Type name: </B>grant_arbiter<BR>
+<B>File name: </B><A HREF="/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv" TARGET="_blank">/home/vv2trainee39/Desktop/Vidya/Final_v2/ulss/RTL/grant_arbiter.sv</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>

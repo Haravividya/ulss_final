@@ -1,0 +1,85 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 15, 2019 at 18:52:28 IST
+irun
+	-access +rwc
+	-f compile_list.f
+		./../../RTL/grant_arbiter.sv
+		./../../RTL/rate_limiter_16to8.sv
+		./../../RTL/sch_ctrl_fsm.sv
+		./../../RTL/scheduler_reg_config.sv
+		./../UVME/uvm_pkg/test_pkg.sv
+		./../UVME/top/ulss_top.sv
+		./../UVME/top/ulss_interface.sv
+	-svseed 58803
+	+UVM_TESTNAME=strem_one_test
+	+define+UVM_REPORT_DISABLE_FILE_LINE
+	-coverage all
+	-covdut rate_limiter_16to4
+	-covworkdir /cov_work
+	-covoverwrite
+	-covfile ./cov_files/cov_cmd.cf
+	-uvmhome CDNS-1.1d
+ncsim: *E,CNDIR: Could not create/open directory /cov_work.
+Loading snapshot worklib.ulss_top:sv .................... Done
+SVSEED set from command line: 58803
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> source /tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+ncsim> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (15.20-s051)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_WARNING @ 0: reporter [BDTYP] Cannot create a component of type 'strem_one_test' because it is not registered with the factory.
+UVM_FATAL @ 0: reporter [INVTST] Requested test from command line +UVM_TESTNAME=strem_one_test not found.
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    0
+UVM_WARNING :    1
+UVM_ERROR :    0
+UVM_FATAL :    1
+** Report counts by id
+[BDTYP]     1
+[INVTST]     1
+Simulation complete via $finish(1) at time 0 FS + 0
+/tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_report_object.svh:292     $finish;
+ncsim> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  ulss_top.dut(rate_limiter_16to4)
+  scope    :  scope
+  testname :  test_sv58803
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_164ff12e_613827d6.ucm (reused)
+  data               :  ./cov_work/scope/test_sv58803/icc_164ff12e_613827d6.ucd
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 15, 2019 at 18:52:28 IST  (total: 00:00:00)

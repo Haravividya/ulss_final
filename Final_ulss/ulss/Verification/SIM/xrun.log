@@ -1,0 +1,185 @@
+xrun(64): 20.09-s009: (c) Copyright 1995-2021 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s009: Started on May 29, 2025 at 13:05:39 IST
+xrun
+	-access +rwc
+	-f compile_list.f
+		./../../RTL/grant_arbiter.sv
+		./../../RTL/rate_limiter_16to8.sv
+		./../../RTL/sch_ctrl_fsm.sv
+		./../../RTL/scheduler_reg_config.sv
+		./../UVME/uvm_pkg/test_pkg.sv
+		./../UVME/top/ulss_top.sv
+		./../UVME/top/ulss_interface.sv
+	-uvmhome CDNS-1.1d
+	+UVM_TESTNAME=zero_packet_count_test
+Recompiling... reason: file '../UVME/sequence/zero_packet_count_sequence.sv' is newer than expected.
+	expected: Tue May 27 12:52:34 2025
+	actual:   Thu May 29 13:05:09 2025
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d
+file: ./../UVME/uvm_pkg/test_pkg.sv
+package test_pkg;
+               |
+xmvlog: *W,TSNSPK (./../UVME/uvm_pkg/test_pkg.sv,1|15): `timescale is not specified for the package.  The default timescale of 1ns/1ns will be assumed for this package.
+file: ./../UVME/top/ulss_top.sv
+     int wait_timeout_cycles =36000;       // Default for regular tests
+                             |
+xmvlog: *W,VARIST (./../UVME/top/ulss_top.sv,165|29): Local static variable with initializer requires 'static' keyword.
+  int simulation_timeout_cycles = 36000;
+                                |
+xmvlog: *W,VARIST (./../UVME/top/ulss_top.sv,166|32): Local static variable with initializer requires 'static' keyword.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		uvm_pkg
+		cdns_uvmapi
+		cdns_assert2uvm_pkg
+		cdns_uvm_pkg
+		test_pkg
+		ulss_top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       8       5
+		Interfaces:                    1       1
+		Verilog packages:              5       5
+		Registers:                 18160   12530
+		Scalar wires:                472       -
+		Vectored wires:              298       -
+		Named events:                  4      12
+		Always blocks:               142      37
+		Initial blocks:              497     229
+		Parallel blocks:              28      29
+		Cont. assignments:           312     117
+		Pseudo assignments:          254     254
+		Assertions:                    2       2
+		Covergroup Instances:          0       1
+		SV Class declarations:       269     382
+		SV Class specializations:    523     523
+	Writing initial simulation snapshot: worklib.ulss_top:sv
+Loading snapshot worklib.ulss_top:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> source /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (20.09-s009)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test zero_packet_count_test...
+UVM_INFO ./../UVME/env/ulss_scoreboard.sv(77) @ 0: uvm_test_top.env.sbd [ulss_scoreboard] Scoreboard build phase completed
+UVM_INFO ./../UVME/agent/ulss_driver.sv(40) @ 0: uvm_test_top.env.ulss_agent.drv [ulss_driver] Using wait_timeout_cycles=16, simulation_timeout_cycles=100000
+UVM_INFO ./../UVME/env/ulss_scoreboard.sv(83) @ 0: uvm_test_top.env.sbd [ulss_scoreboard] Scoreboard connect phase completed
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------------
+Name                               Type                    Size  Value  
+------------------------------------------------------------------------
+uvm_test_top                       zero_packet_count_test  -     @2879  
+  env                              ulss_env                -     @2939  
+    cov                            ulss_coverage           -     @3016  
+      analysis_imp                 uvm_analysis_imp        -     @3065  
+    sbd                            ulss_scoreboard         -     @3098  
+      dut_analysis_imp             uvm_analysis_imp        -     @3156  
+    ulss_agent                     ulss_agent              -     @2985  
+      drv                          ulss_driver             -     @3191  
+        rsp_port                   uvm_analysis_port       -     @3291  
+        seq_item_port              uvm_seq_item_pull_port  -     @3240  
+        wait_timeout_cycles        integral                32    'h10   
+        simulation_timeout_cycles  integral                32    'h186a0
+      mon                          ulss_monitor            -     @3270  
+        analysis_port              uvm_analysis_port       -     @4034  
+      sqr                          ulss_sequencer          -     @3351  
+        rsp_export                 uvm_analysis_export     -     @3409  
+        seq_item_export            uvm_seq_item_pull_imp   -     @3957  
+        arbitration_queue          array                   0     -      
+        lock_queue                 array                   0     -      
+        num_last_reqs              integral                32    'd1    
+        num_last_rsps              integral                32    'd1    
+------------------------------------------------------------------------
+
+UVM_INFO ./../UVME/tests/zero_packet_count_test.sv(54) @ 0: uvm_test_top [uvm_test_top] it test first line
+UVM_INFO ./../UVME/tests/zero_packet_count_test.sv(56) @ 0: uvm_test_top [zero_packet_count_test] inside the packet_count_limit_zero_packet_count_sequence_instuence_inst test
+UVM_INFO ./../UVME/sequence/zero_packet_count_sequence.sv(174) @ 0: uvm_test_top.env.ulss_agent.sqr@@zero_packet_count_sequence_inst [zero_packet_count_sequence] zero_packet_count_sequence: Starting test with a single stream mapping
+UVM_INFO ./../UVME/agent/ulss_driver.sv(182) @ 56: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=0 DATA=0x1
+UVM_INFO ./../UVME/agent/ulss_monitor.sv(47) @ 58: uvm_test_top.env.ulss_agent.mon [ulss_monitor] [MON] Register write: ENABLE=1 ADDR=0x0 DATA=0x1
+UVM_INFO ./../UVME/sequence/zero_packet_count_sequence.sv(202) @ 62: uvm_test_top.env.ulss_agent.sqr@@zero_packet_count_sequence_inst [zero_packet_count_sequence] OUT_STREAM_0_REG configured with value 0x1
+UVM_INFO ./../UVME/agent/ulss_driver.sv(182) @ 82: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=4 DATA=0x10003
+UVM_INFO ./../UVME/agent/ulss_monitor.sv(47) @ 86: uvm_test_top.env.ulss_agent.mon [ulss_monitor] [MON] Register write: ENABLE=1 ADDR=0x4 DATA=0x10003
+UVM_WARNING ./../UVME/agent/ulss_driver.sv(356) @ 158: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_2 after 16 cycles - attempting recovery
+UVM_ERROR ./../UVME/agent/ulss_driver.sv(406) @ 166: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_2 - skipping packet
+UVM_WARNING ./../UVME/agent/ulss_driver.sv(356) @ 230: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_5 after 16 cycles - attempting recovery
+UVM_ERROR ./../UVME/agent/ulss_driver.sv(406) @ 238: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_5 - skipping packet
+UVM_WARNING ./../UVME/agent/ulss_driver.sv(356) @ 302: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_6 after 16 cycles - attempting recovery
+UVM_ERROR ./../UVME/agent/ulss_driver.sv(406) @ 310: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_6 - skipping packet
+UVM_WARNING ./../UVME/agent/ulss_driver.sv(356) @ 374: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_9 after 16 cycles - attempting recovery
+UVM_ERROR ./../UVME/agent/ulss_driver.sv(406) @ 382: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_9 - skipping packet
+UVM_WARNING ./../UVME/agent/ulss_driver.sv(356) @ 446: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_10 after 16 cycles - attempting recovery
+UVM_ERROR ./../UVME/agent/ulss_driver.sv(406) @ 454: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_10 - skipping packet
+UVM_WARNING ./../UVME/agent/ulss_driver.sv(356) @ 518: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_14 after 16 cycles - attempting recovery
+UVM_ERROR ./../UVME/agent/ulss_driver.sv(406) @ 526: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_14 - skipping packet
+UVM_INFO ./../UVME/sequence/zero_packet_count_sequence.sv(220) @ 530: uvm_test_top.env.ulss_agent.sqr@@zero_packet_count_sequence_inst [zero_packet_count_sequence] IN_STREAM_0_REG configured with values: tokens=3, packets=1
+UVM_ERROR ./../UVME/env/ulss_scoreboard.sv(384) @ 558: uvm_test_top.env.sbd [ulss_scoreboard] Unexpected output on port 0 - SOP=1, DATA=0xc46d0071544ba1a0, EOP=0
+UVM_INFO ./../UVME/agent/ulss_driver.sv(418) @ 562: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Driving stream 0: data=0xc46d0071544ba1a0, sop=1, eop=0
+UVM_INFO ./../UVME/sequence/zero_packet_count_sequence.sv(229) @ 570: uvm_test_top.env.ulss_agent.sqr@@zero_packet_count_sequence_inst [zero_packet_count_sequence] Sent first word with SOP asserted
+UVM_INFO ./../UVME/env/ulss_scoreboard.sv(375) @ 578: uvm_test_top.env.sbd [ulss_scoreboard] Output 0 MATCH - Expected: SOP=0, DATA=0xaeae966f14c220ff, EOP=1, Actual: SOP=0, DATA=0xaeae966f14c220ff, EOP=1
+UVM_INFO ./../UVME/agent/ulss_driver.sv(312) @ 578: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Grant for stream 0 already active
+UVM_INFO ./../UVME/agent/ulss_driver.sv(418) @ 578: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Driving stream 0: data=0xaeae966f14c220ff, sop=0, eop=1
+UVM_INFO ./../UVME/sequence/zero_packet_count_sequence.sv(248) @ 586: uvm_test_top.env.ulss_agent.sqr@@zero_packet_count_sequence_inst [zero_packet_count_sequence] Sent last word with EOP asserted
+UVM_INFO ./../UVME/sequence/zero_packet_count_sequence.sv(257) @ 598: uvm_test_top.env.ulss_agent.sqr@@zero_packet_count_sequence_inst [zero_packet_count_sequence] zero_packet_count_sequence completed
+UVM_INFO ./../UVME/tests/zero_packet_count_test.sv(66) @ 598: uvm_test_top [zero_packet_count_test] zero_packet_count_test scenario 2 is completed
+UVM_WARNING ./../UVME/agent/ulss_driver.sv(92) @ 400006: uvm_test_top.env.ulss_agent.drv [ulss_driver] Global simulation timeout reached (100000 cycles), ending simulation
+UVM_INFO /tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 400010: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ./../UVME/env/ulss_scoreboard.sv(411) @ 400010: uvm_test_top.env.sbd [ulss_scoreboard] Scoreboard report - Match count: 1, Mismatch count: 1
+UVM_ERROR ./../UVME/env/ulss_scoreboard.sv(426) @ 400010: uvm_test_top.env.sbd [ulss_scoreboard] TEST FAILED - DUT outputs did not match expected results
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   24
+UVM_WARNING :    7
+UVM_ERROR :    8
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[ulss_driver]    19
+[ulss_monitor]     2
+[ulss_scoreboard]     6
+[uvm_test_top]     1
+[zero_packet_count_sequence]     6
+[zero_packet_count_test]     2
+Simulation complete via $finish(1) at time 400010 NS + 45
+/tools/cadence_march2021/XCELIUM2009/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s009: Exiting on May 29, 2025 at 13:05:45 IST  (total: 00:00:06)

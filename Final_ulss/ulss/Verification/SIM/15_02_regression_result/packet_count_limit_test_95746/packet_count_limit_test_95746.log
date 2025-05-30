@@ -1,0 +1,168 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Feb 15, 2019 at 18:34:19 IST
+irun
+	-access +rwc
+	-f compile_list.f
+		./../../RTL/grant_arbiter.sv
+		./../../RTL/rate_limiter_16to8.sv
+		./../../RTL/sch_ctrl_fsm.sv
+		./../../RTL/scheduler_reg_config.sv
+		./../UVME/uvm_pkg/test_pkg.sv
+		./../UVME/top/ulss_top.sv
+		./../UVME/top/ulss_interface.sv
+	-svseed 95746
+	+UVM_TESTNAME=packet_count_limit_test
+	+define+UVM_REPORT_DISABLE_FILE_LINE
+	-coverage all
+	-covdut rate_limiter_16to4
+	-covworkdir /cov_work
+	-covoverwrite
+	-covfile ./cov_files/cov_cmd.cf
+	-uvmhome CDNS-1.1d
+ncsim: *E,CNDIR: Could not create/open directory /cov_work.
+Loading snapshot worklib.ulss_top:sv .................... Done
+SVSEED set from command line: 95746
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> source /tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+ncsim> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (15.20-s051)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test packet_count_limit_test...
+UVM_INFO @ 0: uvm_test_top.env.ulss_agent.drv [ulss_driver] Using wait_timeout_cycles=16, simulation_timeout_cycles=100000
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+-------------------------------------------------------------------------
+Name                               Type                     Size  Value  
+-------------------------------------------------------------------------
+uvm_test_top                       packet_count_limit_test  -     @2899  
+  env                              ulss_env                 -     @2964  
+    cov                            ulss_coverage            -     @3043  
+      analysis_imp                 uvm_analysis_imp         -     @3092  
+    ulss_agent                     ulss_agent               -     @3012  
+      drv                          ulss_driver              -     @3130  
+        rsp_port                   uvm_analysis_port        -     @3230  
+        seq_item_port              uvm_seq_item_pull_port   -     @3179  
+        wait_timeout_cycles        integral                 32    'h10   
+        simulation_timeout_cycles  integral                 32    'h186a0
+      mon                          ulss_monitor             -     @3209  
+        analysis_port              uvm_analysis_port        -     @3974  
+      sqr                          ulss_sequencer           -     @3290  
+        rsp_export                 uvm_analysis_export      -     @3348  
+        seq_item_export            uvm_seq_item_pull_imp    -     @3896  
+        arbitration_queue          array                    0     -      
+        lock_queue                 array                    0     -      
+        num_last_reqs              integral                 32    'd1    
+        num_last_rsps              integral                 32    'd1    
+-------------------------------------------------------------------------
+
+UVM_INFO @ 0: uvm_test_top [uvm_test_top] it test first line
+UVM_INFO @ 0: uvm_test_top [packet_count_limit_test] inside the packet_count_limit_packet_count_limit_sequence_instuence_inst test
+UVM_INFO @ 0: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] packet_count_limit_sequence: Starting test with a single stream mapping
+UVM_INFO @ 56: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=0 DATA=0x1
+UVM_INFO @ 58: uvm_test_top.env.ulss_agent.mon [ulss_monitor] [MON] Register write: ENABLE=1 ADDR=0x0 DATA=0x1
+UVM_WARNING @ 130: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_1 after 16 cycles - attempting recovery
+UVM_ERROR @ 138: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_1 - skipping packet
+UVM_WARNING @ 202: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_2 after 16 cycles - attempting recovery
+UVM_ERROR @ 210: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_2 - skipping packet
+UVM_WARNING @ 274: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_3 after 16 cycles - attempting recovery
+UVM_ERROR @ 282: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_3 - skipping packet
+UVM_WARNING @ 346: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_5 after 16 cycles - attempting recovery
+UVM_ERROR @ 354: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_5 - skipping packet
+UVM_WARNING @ 418: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_6 after 16 cycles - attempting recovery
+UVM_ERROR @ 426: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_6 - skipping packet
+UVM_WARNING @ 490: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_7 after 16 cycles - attempting recovery
+UVM_ERROR @ 498: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_7 - skipping packet
+UVM_WARNING @ 562: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_8 after 16 cycles - attempting recovery
+UVM_ERROR @ 570: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_8 - skipping packet
+UVM_WARNING @ 634: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_9 after 16 cycles - attempting recovery
+UVM_ERROR @ 642: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_9 - skipping packet
+UVM_WARNING @ 706: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_10 after 16 cycles - attempting recovery
+UVM_ERROR @ 714: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_10 - skipping packet
+UVM_WARNING @ 778: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_11 after 16 cycles - attempting recovery
+UVM_ERROR @ 786: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_11 - skipping packet
+UVM_WARNING @ 850: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_13 after 16 cycles - attempting recovery
+UVM_ERROR @ 858: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_13 - skipping packet
+UVM_WARNING @ 922: uvm_test_top.env.ulss_agent.drv [ulss_driver] Timeout waiting for pck_rd_en_grnt_15 after 16 cycles - attempting recovery
+UVM_ERROR @ 930: uvm_test_top.env.ulss_agent.drv [ulss_driver] Recovery failed for pck_rd_en_grnt_15 - skipping packet
+UVM_INFO @ 934: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] OUT_STREAM_0_REG configured with value 0x1
+UVM_INFO @ 954: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] WRITE ADDR=4 DATA=0x10003
+UVM_INFO @ 958: uvm_test_top.env.ulss_agent.mon [ulss_monitor] [MON] Register write: ENABLE=1 ADDR=0x4 DATA=0x10003
+UVM_INFO @ 962: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] IN_STREAM_0_REG configured with values: tokens=3, packets=1
+UVM_INFO @ 994: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Driving stream 0: data=0x5a9eddb5ce5c6a9c, sop=1, eop=0
+UVM_INFO @ 1002: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] Sent first word with SOP asserted
+UVM_INFO @ 1010: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Grant for stream 0 already active
+UVM_INFO @ 1010: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Driving stream 0: data=0x18c9833131c62f63, sop=0, eop=0
+UVM_INFO @ 1018: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] Sent data word 1
+UVM_INFO @ 1026: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Grant for stream 0 already active
+UVM_INFO @ 1026: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Driving stream 0: data=0xe11708c240c31f81, sop=0, eop=0
+UVM_INFO @ 1034: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] Sent data word 2
+UVM_INFO @ 1042: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Grant for stream 0 already active
+UVM_INFO @ 1042: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Driving stream 0: data=0x93d7c4278d866c1b, sop=0, eop=0
+UVM_INFO @ 1050: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] Sent data word 3
+UVM_INFO @ 1058: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Grant for stream 0 already active
+UVM_INFO @ 1058: uvm_test_top.env.ulss_agent.drv [ulss_driver] [DRV] Driving stream 0: data=0x894c80129245dc24, sop=0, eop=1
+UVM_INFO @ 1066: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] Sent last word with EOP asserted
+UVM_INFO @ 1078: uvm_test_top.env.ulss_agent.sqr@@packet_count_limit_sequence_inst [packet_count_limit_sequence] packet_count_limit_sequence completed
+UVM_INFO @ 1078: uvm_test_top [packet_count_limit_test] packet_count_limit_test scenario 2 is completed
+UVM_WARNING @ 400006: uvm_test_top.env.ulss_agent.drv [ulss_driver] Global simulation timeout reached (100000 cycles), ending simulation
+UVM_INFO @ 400010: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   29
+UVM_WARNING :   13
+UVM_ERROR :   12
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[packet_count_limit_sequence]     9
+[packet_count_limit_test]     2
+[ulss_driver]    37
+[ulss_monitor]     2
+[uvm_test_top]     1
+Simulation complete via $finish(1) at time 400010 NS + 45
+/tools/cadence/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+ncsim> exit
+ncsim: *W,CGDEFN: Default name "uvm_pkg.uvm_test_top.env.cov.ulss_io_cg" will be generated for covergroup instance "worklib.test_pkg::ulss_coverage::ulss_io_cg@3124_2" as the name of the covergroup instance is not specified explicitly: ../UVME/env/ulss_coverage.sv, 7.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  ulss_top.dut(rate_limiter_16to4)
+  scope    :  scope
+  testname :  test_sv95746
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_164ff12e_4bc64fa2.ucm (reused)
+  data               :  ./cov_work/scope/test_sv95746/icc_164ff12e_4bc64fa2.ucd
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 15, 2019 at 18:34:27 IST  (total: 00:00:08)

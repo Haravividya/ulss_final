@@ -1,0 +1,12 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-ACCESS
++rwc
+-COVERAGE
+all
+-COVDUT
+rate_limiter_16to4
+-COVFILE
+./cov_files/cov_cmd.cf
